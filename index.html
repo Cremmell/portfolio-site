@@ -1,4 +1,3 @@
-<!-- /Users/cremmell/Documents/New project/index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,33 +14,41 @@
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <ul id="nav-links" class="nav-links">
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a data-link="github_profile" href="#" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- EDITABLE TEXT BLOCK: Hero -->
-    <section class="hero container">
-      <p class="eyebrow">Chris Remmell</p>
-      <h1>Marketing Analytics | Data-Driven Decision Making | Media, Entertainment &amp; Consumer Platforms</h1>
-      <p class="lead">
-        MS Marketing Intelligence candidate at Fordham University&apos;s Gabelli School of Business. Interested in marketing analytics, data-driven decision making, and analytics applications in media, entertainment, and consumer platforms.
-      </p>
-      <div class="button-row">
-        <a class="button" href="#projects">View Projects</a>
-        <a class="button button-secondary" data-link="github_profile" href="#" target="_blank" rel="noopener">GitHub</a>
+    <section class="hero-wrap">
+      <div class="hero container">
+        <p class="eyebrow">Marketing Analytics Portfolio</p>
+        <h1>Turning marketing data into clear decisions for media, entertainment, and consumer platforms.</h1>
+        <p class="lead">
+          I&apos;m Chris Remmell, an MS Marketing Intelligence candidate at Fordham University focused on analytics-driven growth, campaign performance, and audience behavior.
+        </p>
+        <div class="button-row">
+          <a class="button" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="#contact">Get in Touch</a>
+          <a class="button button-ghost" data-link="github_profile" href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
     </section>
 
-    <!-- EDITABLE TEXT BLOCK: Featured Projects -->
     <section id="projects" class="section container">
-      <h2>Featured Projects</h2>
-      <div class="grid two-col">
-        <article class="card">
-          <h3>Uber NYC Rider Experience Case Study</h3>
+      <div class="section-heading">
+        <p class="section-label">Selected Work</p>
+        <h2>Featured Projects</h2>
+        <p>Case studies combining marketing strategy, campaign performance analysis, and practical recommendations.</p>
+      </div>
+
+      <div class="grid two-col project-grid">
+        <article class="card project-card">
+          <p class="project-type">Case Study</p>
+          <h3>Uber NYC Rider Experience</h3>
           <p>Data-driven analysis of Uber ride performance across NYC zones and rider segments using Python.</p>
           <ul class="insights">
             <li>Riders aged 18–22 cancel significantly more often, with a 24 percent cancellation rate compared to the 14.6 percent overall average</li>
@@ -55,8 +62,9 @@
           </div>
         </article>
 
-        <article class="card">
-          <h3>NYC Bite Week Marketing Analytics Case Study</h3>
+        <article class="card project-card">
+          <p class="project-type">Campaign Analytics</p>
+          <h3>NYC Bite Week Marketing Analytics</h3>
           <p>Content marketing and paid search experiment analyzing how Google Ads campaigns drive traffic and engagement for a NYC dining blog.</p>
           <ul class="insights">
             <li>46,506 impressions and 651 clicks generated through Google Ads search campaigns</li>
@@ -72,11 +80,13 @@
       </div>
     </section>
 
-    <!-- EDITABLE TEXT BLOCK: Tools & Technologies -->
-    <section class="section section-alt">
+    <section id="skills" class="section section-alt">
       <div class="container">
-        <h2>Tools &amp; Technologies</h2>
-        <p>I use a combination of analytics, data visualization, and marketing measurement tools to analyze marketplace performance, campaign results, and consumer behavior.</p>
+        <div class="section-heading compact">
+          <p class="section-label">Capabilities</p>
+          <h2>Skills &amp; Tools</h2>
+          <p>I use a combination of analytics, visualization, and measurement tools to evaluate marketplace performance, campaign outcomes, and consumer behavior.</p>
+        </div>
         <ul class="tag-list">
           <li>Python</li>
           <li>Pandas</li>
@@ -90,14 +100,15 @@
       </div>
     </section>
 
-    <!-- EDITABLE TEXT BLOCK: Education -->
-    <section class="section container">
-      <h2>Education</h2>
-      <div class="stack">
-        <article class="card">
+    <section id="education" class="section container">
+      <div class="section-heading">
+        <p class="section-label">Background</p>
+        <h2>Education &amp; Experience Snapshot</h2>
+      </div>
+      <div class="grid two-col timeline-grid">
+        <article class="card timeline-card">
           <h3>Fordham University, Gabelli School of Business</h3>
-          <p><strong>MS in Marketing Intelligence</strong></p>
-          <p>August 2025 - August 2026</p>
+          <p><strong>MS in Marketing Intelligence</strong> · August 2025 - August 2026</p>
           <p><strong>Relevant Coursework:</strong></p>
           <ul>
             <li>Marketing Analytics</li>
@@ -106,11 +117,9 @@
           </ul>
         </article>
 
-        <article class="card">
+        <article class="card timeline-card">
           <h3>Indiana University, Luddy School of Informatics</h3>
-          <p><strong>BS in Informatics</strong></p>
-          <p>Minor: Business</p>
-          <p>September 2017 - May 2021</p>
+          <p><strong>BS in Informatics</strong> · Minor: Business · September 2017 - May 2021</p>
           <p><strong>Relevant Coursework:</strong></p>
           <ul>
             <li>Digital Business Technologies</li>
@@ -118,40 +127,57 @@
             <li>HCI / Interaction Design</li>
           </ul>
         </article>
+
+        <article class="card timeline-card">
+          <h3>Professional Experience Focus</h3>
+          <p>Prior to graduate studies, I built experience in client services, recruiting, and investment research support environments.</p>
+          <ul>
+            <li>Conducted industry research and sourcing of subject-matter experts</li>
+            <li>Supported due diligence calls for investment and research teams</li>
+            <li>Developed a strong foundation in analytical problem solving and insight communication</li>
+          </ul>
+        </article>
+
+        <article class="card timeline-card">
+          <h3>Certifications</h3>
+          <ul class="cert-list">
+            <li>Google Data Analytics Professional Certificate</li>
+            <li>Google Analytics Certification</li>
+            <li>Google Ads Search Certification</li>
+            <li>Google Ads Measurement Certification</li>
+            <li>Generative AI Optimization Certification</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <!-- EDITABLE TEXT BLOCK: Certifications -->
-    <section class="section section-alt">
-      <div class="container">
-        <h2>Certifications</h2>
-        <ul class="cert-list">
-          <li>Google Data Analytics Professional Certificate</li>
-          <li>Google Analytics Certification</li>
-          <li>Google Ads Search Certification</li>
-          <li>Google Ads Measurement Certification</li>
-          <li>Generative AI Optimization Certification</li>
-        </ul>
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div class="section-heading compact">
+          <p class="section-label">About</p>
+          <h2>Driven by data, grounded in business context.</h2>
+        </div>
+        <div class="card">
+          <p>I&apos;m currently pursuing an MS in Marketing Intelligence at Fordham University&apos;s Gabelli School of Business after beginning my career in client services, recruiting, and investment research support roles.</p>
+          <p>Before transitioning into analytics, I worked in roles focused on financial services and investment research, where I conducted industry research, sourced subject-matter experts, and facilitated due diligence calls for investment firms.</p>
+          <p>That experience strengthened my interest in data-driven insights and analytical problem solving, leading me to pursue graduate studies in marketing intelligence and analytics.</p>
+          <p>I&apos;m especially interested in applying analytics to marketing, media, entertainment, and consumer platforms.</p>
+        </div>
       </div>
     </section>
 
-    <!-- EDITABLE TEXT BLOCK: About -->
-    <section id="about" class="section container">
-      <h2>About</h2>
-      <div class="card">
-        <p>I&apos;m currently pursuing an MS in Marketing Intelligence at Fordham University&apos;s Gabelli School of Business after beginning my career in client services, recruiting, and investment research support roles.</p>
-        <p>Before transitioning into analytics, I worked in roles focused on financial services and investment research, where I conducted industry research, sourced subject-matter experts, and facilitated due diligence calls for investment firms.</p>
-        <p>That experience strengthened my interest in data-driven insights and analytical problem solving, leading me to pursue graduate studies in marketing intelligence and analytics.</p>
-        <p>I&apos;m especially interested in applying analytics to marketing, media, entertainment, and consumer platforms.</p>
-      </div>
-    </section>
-
-    <!-- EDITABLE LINKS + TEXT BLOCK: Resume -->
-    <section id="resume" class="section section-alt">
-      <div class="container">
-        <h2>Resume</h2>
-        <p>For a full overview of my experience, coursework, technical skills, and certifications, download my resume below.</p>
-        <a class="button" data-link="resume_pdf" href="#" download>Download Resume</a>
+    <section id="contact" class="section container">
+      <div class="contact-card">
+        <div>
+          <p class="section-label">Let&apos;s Connect</p>
+          <h2>Open to analytics opportunities in marketing, media, and entertainment.</h2>
+          <p>For a full overview of my experience, coursework, technical skills, and certifications, download my resume or connect directly.</p>
+        </div>
+        <div class="button-row">
+          <a class="button" data-link="resume_pdf" href="#" download>Download Resume</a>
+          <a class="button button-secondary" data-link="linkedin_profile" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button button-ghost" data-link="email" href="#">Email</a>
+        </div>
       </div>
     </section>
   </main>
@@ -165,7 +191,7 @@
         <li><a data-link="email" href="#">Email</a></li>
       </ul>
     </div>
-    <p class="copyright">&copy; <span id="year"></span> Chris Remmell</p>
+    <p class="copyright">Crafted with focus and clarity. &copy; <span id="year"></span> Chris Remmell</p>
   </footer>
 
   <script src="script.js"></script>
