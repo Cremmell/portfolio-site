@@ -36,3 +36,54 @@ if (toggleButton && navLinks) {
     toggleButton.setAttribute("aria-expanded", String(isOpen));
   });
 }
+
+const revealTargets = document.querySelectorAll(".section, .hero, .project-card, .timeline-card, .about-grid .card, .contact-card");
+if ("IntersectionObserver" in window && revealTargets.length) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -10% 0px", threshold: 0.14 }
+  );
+
+  revealTargets.forEach((target, index) => {
+    target.classList.add("reveal");
+    target.style.transitionDelay = `${Math.min(index * 35, 220)}ms`;
+    revealObserver.observe(target);
+  });
+}
+
+const sectionIds = ["projects", "skills", "education", "about", "contact"];
+const sectionElements = sectionIds
+  .map((id) => document.getElementById(id))
+  .filter(Boolean);
+const navAnchors = Array.from(document.querySelectorAll(".nav-links a"));
+
+if ("IntersectionObserver" in window && sectionElements.length && navAnchors.length) {
+  const navObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const sectionId = entry.target.getAttribute("id");
+        if (!sectionId) return;
+        const link = navAnchors.find((anchor) => anchor.getAttribute("href") === `#${sectionId}`);
+        if (!link) return;
+
+        if (entry.isIntersecting) {
+          navAnchors.forEach((anchor) => anchor.classList.remove("active"));
+          link.classList.add("active");
+        }
+      });
+    },
+    {
+      rootMargin: "-35% 0px -55% 0px",
+      threshold: 0.01
+    }
+  );
+
+  sectionElements.forEach((section) => navObserver.observe(section));
+}
