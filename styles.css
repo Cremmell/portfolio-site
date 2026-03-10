@@ -726,14 +726,6 @@ h1.hero-heading {
 .exp-block {
   grid-column: span 2;
 }
-.exp-title {
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  margin-bottom: 12px;
-}
 .experience-list {
   display: flex;
   flex-direction: column;
