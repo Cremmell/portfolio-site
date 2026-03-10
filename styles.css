@@ -77,7 +77,7 @@ p { color: var(--text-2); }
   gap: 10px;
   margin-bottom: 16px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -107,7 +107,7 @@ p { color: var(--text-2); }
 /* ── SECTION LABEL (legacy alias) ── */
 .section-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -141,7 +141,7 @@ p { color: var(--text-2); }
 .brand {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: -0.03em;
   color: var(--ink);
   text-decoration: none;
@@ -158,7 +158,7 @@ p { color: var(--text-2); }
   border-radius: var(--r-sm);
   padding: 6px 12px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   cursor: pointer;
@@ -177,7 +177,7 @@ p { color: var(--text-2); }
   display: block;
   padding: 7px 13px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-2);
@@ -240,7 +240,7 @@ p { color: var(--text-2); }
   padding: 5px 14px;
   border-radius: 100px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   margin-bottom: 26px;
   animation: fadeUp 0.65s ease both;
@@ -272,7 +272,7 @@ h1.hero-heading {
 }
 
 .lead {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-2);
   line-height: 1.8;
   max-width: 52ch;
@@ -314,7 +314,7 @@ h1.hero-heading {
 .hero-meta { text-align: center; margin-top: 4px; }
 .hero-role {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -323,7 +323,7 @@ h1.hero-heading {
 }
 .hero-school {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-3);
   line-height: 1.5;
 }
@@ -336,7 +336,7 @@ h1.hero-heading {
   padding: 11px 22px;
   border-radius: 100px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   text-decoration: none;
   transition: all 0.18s;
@@ -388,7 +388,7 @@ h1.hero-heading {
   margin-bottom: 44px;
 }
 .projects-intro p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.75;
 }
 
@@ -455,7 +455,7 @@ h1.hero-heading {
 
 .project-type {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -484,7 +484,7 @@ h1.hero-heading {
   margin-bottom: 10px;
 }
 .project-card > p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.7;
   margin-bottom: 18px;
 }
@@ -502,7 +502,7 @@ h1.hero-heading {
   display: flex;
   gap: 10px;
   align-items: flex-start;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-2);
   line-height: 1.55;
 }
@@ -510,7 +510,7 @@ h1.hero-heading {
   content: '→';
   color: var(--teal);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 1px;
   flex-shrink: 0;
 }
@@ -523,7 +523,7 @@ h1.hero-heading {
 }
 .tool-badge {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   padding: 3px 10px;
   background: var(--paper);
   border: 1px solid var(--rule);
@@ -543,7 +543,7 @@ h1.hero-heading {
 
 .card-cta {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   color: var(--teal);
   display: inline-flex;
@@ -563,7 +563,7 @@ h1.hero-heading {
   align-items: start;
 }
 .skills-copy p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.75;
   margin-top: 14px;
 }
@@ -583,7 +583,7 @@ h1.hero-heading {
   padding: 14px 12px;
   text-align: center;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--ink);
   display: flex;
@@ -636,14 +636,14 @@ h1.hero-heading {
 .edu-school {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 19px;
   letter-spacing: -0.02em;
   color: var(--ink);
   margin-bottom: 2px;
 }
 .edu-sub {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.06em;
   color: var(--text-3);
   text-transform: uppercase;
@@ -652,19 +652,19 @@ h1.hero-heading {
 .edu-degree {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink);
   margin-bottom: 3px;
 }
 .edu-dates {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--teal);
   margin-bottom: 18px;
 }
 .coursework-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-3);
@@ -681,7 +681,7 @@ h1.hero-heading {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-2);
 }
 .course-list li::before {
@@ -703,13 +703,13 @@ h1.hero-heading {
 .exp-title {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: -0.02em;
   color: var(--ink);
   margin-bottom: 8px;
 }
 .exp-intro {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-2);
   line-height: 1.7;
   margin-bottom: 14px;
@@ -724,7 +724,7 @@ h1.hero-heading {
 .exp-list li {
   display: flex;
   gap: 10px;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-2);
   line-height: 1.6;
 }
@@ -732,7 +732,7 @@ h1.hero-heading {
   content: '↳';
   color: var(--text-3);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 2px;
   flex-shrink: 0;
 }
@@ -742,7 +742,7 @@ h1.hero-heading {
 }
 .certs-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-3);
@@ -761,7 +761,7 @@ h1.hero-heading {
   border: 1px solid var(--rule);
   border-radius: var(--r-sm);
   padding: 12px 12px;
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text-2);
   line-height: 1.4;
   display: flex;
@@ -772,7 +772,7 @@ h1.hero-heading {
 .cert-list li::before {
   content: '✓';
   color: var(--teal-mid);
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 2px;
   flex-shrink: 0;
   font-family: 'JetBrains Mono', monospace;
@@ -798,7 +798,7 @@ h1.hero-heading {
   gap: 10px;
   margin-bottom: 16px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -843,7 +843,7 @@ h1.hero-heading {
 .about-pull p {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.65;
   color: rgba(255,255,255,0.7);
   margin: 0;
@@ -855,7 +855,7 @@ h1.hero-heading {
   gap: 16px;
 }
 .about-body p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
   color: rgba(255,255,255,0.68);
 }
@@ -874,7 +874,7 @@ h1.hero-heading {
 
 .contact-card .section-label { color: var(--teal); }
 .contact-card h2 { color: var(--ink); margin: 10px 0 10px; }
-.contact-card > div:first-child p { font-size: 14px; line-height: 1.75; max-width: 48ch; }
+.contact-card > div:first-child p { font-size: 15px; line-height: 1.75; max-width: 48ch; }
 
 .contact-card .button-row { margin-top: 0; flex-direction: column; align-items: flex-start; }
 .contact-card .button-row { flex-direction: row; }
@@ -897,7 +897,7 @@ h1.hero-heading {
 .footer-brand {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
   color: rgba(255,255,255,0.65);
   letter-spacing: -0.02em;
 }
@@ -911,7 +911,7 @@ h1.hero-heading {
 }
 .site-footer a {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 11px;
   color: rgba(255,255,255,0.38);
   text-decoration: none;
   text-transform: uppercase;
@@ -922,7 +922,7 @@ h1.hero-heading {
 
 .copyright {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
+  font-size: 10px;
   color: rgba(255,255,255,0.22);
   text-align: center;
   padding: 16px 0 4px;
@@ -940,7 +940,7 @@ h1.hero-heading {
   align-items: center;
   gap: 6px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-3);
@@ -984,14 +984,14 @@ h1.hero-heading {
   margin-bottom: 0;
 }
 .case-section h2 {
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 14px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--rule-soft);
 }
 .case-section p,
 .case-section ul {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.75;
   color: var(--text-2);
 }
@@ -1011,7 +1011,7 @@ h1.hero-heading {
   content: '→';
   color: var(--teal);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 2px;
   flex-shrink: 0;
 }
@@ -1025,7 +1025,7 @@ h1.hero-heading {
   color: var(--text-3);
   background: var(--teal-light);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.04em;
   padding: 1.5rem;
   text-align: center;
