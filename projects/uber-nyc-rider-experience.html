@@ -1,70 +1,105 @@
-<!-- /Users/cremmell/Documents/New project/projects/uber-nyc-rider-experience.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uber NYC Rider Experience Case Study | Chris Remmell</title>
-  <meta name="description" content="Uber NYC Rider Experience Case Study by Chris Remmell." />
+  <title>Uber NYC Rider Experience | Chris Remmell</title>
+  <meta name="description" content="Uber NYC Rider Experience case study by Chris Remmell. Data-driven analysis of ride performance across NYC zones and rider segments using Python." />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
+
+  <!-- ── HEADER / NAV ── -->
   <header class="site-header">
     <nav class="container nav" aria-label="Primary">
-      <a class="brand" href="../index.html">Chris Remmell</a>
+      <a class="brand" href="../index.html">Chris Remmell<span class="dot">.</span></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <ul id="nav-links" class="nav-links">
         <li><a href="../index.html#projects">Projects</a></li>
         <li><a href="../index.html#about">About</a></li>
-        <li><a href="../index.html#contact">Contact</a></li>
-        <li><a data-link="github_profile" href="#" target="_blank" rel="noopener">GitHub</a></li>
+        <li class="nav-cta"><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="section container">
-    <!-- EDITABLE TEXT BLOCK: Case Study Content -->
-    <h1>Uber NYC Rider Experience Case Study</h1>
+  <main>
 
-    <section class="card case-section">
-      <h2>Overview</h2>
-      <p>Data-driven analysis of Uber ride performance across NYC zones and rider segments using Python.</p>
-    </section>
-
-    <section class="card case-section">
-      <h2>Key Insights</h2>
-      <ul>
-        <li>Riders aged 18–22 cancel significantly more often, with a 24 percent cancellation rate compared to the 14.6 percent overall average</li>
-        <li>Wait time strongly influences cancellations, particularly in high-demand zones</li>
-        <li>The Bronx shows the longest average wait times and highest cancellation rates, highlighting operational supply-demand imbalance</li>
-      </ul>
-    </section>
-
-    <section class="card case-section">
-      <h2>Tools Used</h2>
-      <p>Python, Pandas, Data Visualization</p>
-    </section>
-
-    <section class="card case-section">
-      <h2>Business Takeaway</h2>
-      <p>The analysis highlights a supply-demand imbalance across NYC zones and suggests a need for operational strategies that reduce rider wait times and improve service reliability in underserved areas.</p>
-    </section>
-
-    <section class="card case-section">
-      <h2>Project Screenshots (Placeholder)</h2>
-      <div class="image-placeholder">Add chart or screenshot here (e.g., wait time by zone or cancellation trend)</div>
-    </section>
-
-    <!-- EDITABLE LINKS BLOCK: Repository -->
-    <div class="button-row">
-      <a class="button" data-link="uber_repo" href="#" target="_blank" rel="noopener">View Code on GitHub</a>
-      <a class="button button-secondary" href="../index.html#projects">Back to Projects</a>
+    <!-- ── CASE STUDY HEADER ── -->
+    <div class="case-header">
+      <div class="container">
+        <a class="case-back" href="../index.html#projects">← Back to Projects</a>
+        <div class="case-meta-row" style="margin-bottom:16px;">
+          <span class="project-type case-study">Case Study</span>
+          <span class="tool-badge">
+            <img src="../assets/images/python.svg" alt="" aria-hidden="true" />
+            Python
+          </span>
+          <span class="tool-badge">Pandas</span>
+          <span class="tool-badge">Data Visualization</span>
+        </div>
+        <h1 class="case-title">Uber NYC Rider Experience</h1>
+        <p style="font-size:15px;color:var(--text-2);max-width:60ch;font-family:'Lora',serif;font-style:italic;line-height:1.6;">
+          Data-driven analysis of Uber ride performance across NYC zones and rider segments using Python.
+        </p>
+      </div>
     </div>
+
+    <!-- ── CASE STUDY BODY ── -->
+    <div class="case-body">
+      <div class="container">
+        <div class="case-grid">
+
+          <div class="case-section">
+            <h2>Overview</h2>
+            <p>Data-driven analysis of Uber ride performance across NYC zones and rider segments using Python.</p>
+          </div>
+
+          <div class="case-section">
+            <h2>Key Insights</h2>
+            <ul>
+              <li>Riders aged 18–22 cancel significantly more often, with a 24 percent cancellation rate compared to the 14.6 percent overall average</li>
+              <li>Wait time strongly influences cancellations, particularly in high-demand zones</li>
+              <li>The Bronx shows the longest average wait times and highest cancellation rates, highlighting operational supply-demand imbalance</li>
+            </ul>
+          </div>
+
+          <div class="case-section">
+            <h2>Tools Used</h2>
+            <div class="tools" style="margin-bottom:0;">
+              <span class="tool-badge">
+                <img src="../assets/images/python.svg" alt="" aria-hidden="true" />
+                Python
+              </span>
+              <span class="tool-badge">Pandas</span>
+              <span class="tool-badge">Data Visualization</span>
+            </div>
+          </div>
+
+          <div class="case-section">
+            <h2>Business Takeaway</h2>
+            <p>The analysis highlights a supply-demand imbalance across NYC zones and suggests a need for operational strategies that reduce rider wait times and improve service reliability in underserved areas.</p>
+          </div>
+
+          <div class="case-section">
+            <h2>Project Screenshots</h2>
+            <div class="image-placeholder">Add chart or screenshot here (e.g., wait time by zone or cancellation trend)</div>
+          </div>
+
+          <div class="case-actions">
+            <a class="button" data-link="uber_repo" href="#" target="_blank" rel="noopener">View Code on GitHub</a>
+            <a class="button button-secondary" href="../index.html#projects">Back to Projects</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </main>
 
+  <!-- ── FOOTER ── -->
   <footer class="site-footer">
     <div class="container footer-grid">
-      <p><strong>Chris Remmell</strong><br />Marketing Analytics Portfolio</p>
+      <div class="footer-brand">Chris Remmell · Marketing Analytics Portfolio</div>
       <ul>
         <li><a data-link="github_profile" href="#" target="_blank" rel="noopener">GitHub</a></li>
         <li><a data-link="linkedin_profile" href="#" target="_blank" rel="noopener">LinkedIn</a></li>
