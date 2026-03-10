@@ -141,7 +141,7 @@ p { color: var(--text-2); }
 .brand {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 800;
-  font-size: 17px;
+  font-size: 20px;
   letter-spacing: -0.03em;
   color: var(--ink);
   text-decoration: none;
@@ -257,6 +257,7 @@ p { color: var(--text-2); }
 h1.hero-heading {
   margin-bottom: 20px;
   max-width: none;
+  width: fit-content;
   animation: fadeUp 0.65s 0.08s ease both;
 }
 
