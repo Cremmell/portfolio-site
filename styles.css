@@ -333,18 +333,16 @@ h1.hero-heading {
 }
 
 .location-badge {
-  display: table;
   margin: 10px auto 0;
-  padding: 4px 12px;
-  border-radius: 100px;
-  border: 1px solid rgba(10,124,114,0.22);
-  background: var(--teal-light);
-  color: var(--teal);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  line-height: 1.2;
-  text-transform: uppercase;
+  padding: 3px 10px;
+  margin-bottom: 0;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  background: rgba(10,124,114,0.09);
+}
+
+.location-badge::before {
+  display: none;
 }
 
 /* ── BUTTONS ── */
