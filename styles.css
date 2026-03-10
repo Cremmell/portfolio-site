@@ -609,30 +609,10 @@ h1.hero-heading {
   opacity: 0.8;
 }
 
-.cert-spacer {
-  grid-column: 2;
-  height: 1px;
-  background: var(--rule);
-  margin-top: 8px;
-}
-.cert-heading {
-  grid-column: 2;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--teal-mid);
-  margin-top: 4px;
-}
-.cert-list {
-  grid-column: 2;
-  grid-template-columns: repeat(2, 1fr);
-}
-.cert-list li {
-  justify-content: center;
-  font-size: 12px;
-  line-height: 1.4;
+.skills-row-certs {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--rule);
 }
 
 /* ── EDUCATION ── */
@@ -765,47 +745,6 @@ h1.hero-heading {
   font-size: 13px;
   margin-top: 2px;
   flex-shrink: 0;
-}
-
-.certs-wrap {
-  grid-column: span 2;
-}
-.certs-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-3);
-  margin-bottom: 10px;
-}
-.cert-list {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  margin: 0;
-}
-.cert-list li {
-  background: var(--white);
-  border: 1px solid var(--rule);
-  border-radius: var(--r-sm);
-  padding: 12px 12px;
-  font-size: 13px;
-  color: var(--text-2);
-  line-height: 1.4;
-  display: flex;
-  align-items: flex-start;
-  gap: 7px;
-  font-family: 'Lora', serif;
-}
-.cert-list li::before {
-  content: '✓';
-  color: var(--teal-mid);
-  font-size: 12px;
-  margin-top: 2px;
-  flex-shrink: 0;
-  font-family: 'JetBrains Mono', monospace;
 }
 
 /* ── ABOUT (dark section) ── */
@@ -1103,8 +1042,7 @@ h1.hero-heading {
   .skills-layout { grid-template-columns: 1fr; gap: 32px; }
   .tag-list { grid-template-columns: repeat(4, 1fr); }
   .edu-grid { grid-template-columns: 1fr; }
-  .exp-block, .certs-wrap { grid-column: span 1; }
-  .cert-list { grid-template-columns: repeat(2, 1fr); }
+  .exp-block { grid-column: span 1; }
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
   .contact-card { flex-direction: column; align-items: flex-start; gap: 28px; }
 }
@@ -1129,7 +1067,6 @@ h1.hero-heading {
   .nav-links.open { display: flex; }
   .nav-links a { border-radius: var(--r-sm); padding: 10px 14px; }
   .tag-list { grid-template-columns: repeat(2, 1fr); }
-  .cert-list { grid-template-columns: 1fr; }
   .footer-grid { flex-direction: column; align-items: flex-start; }
   .case-header { padding: 48px 0 36px; }
 }
