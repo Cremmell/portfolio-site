@@ -71,6 +71,7 @@ h3 { font-size: clamp(18px, 2vw, 22px); letter-spacing: -0.025em; line-height: 1
 p { color: var(--text-2); }
 
 .accent { color: var(--teal); }
+.hero-accent { color: #2FAE9B; }
 
 /* ── EYEBROW LABELS ── */
 .eyebrow {
