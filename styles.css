@@ -332,6 +332,21 @@ h1.hero-heading {
   line-height: 1.5;
 }
 
+.location-badge {
+  display: table;
+  margin: 10px auto 0;
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(10,124,114,0.22);
+  background: var(--teal-light);
+  color: var(--teal);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 /* ── BUTTONS ── */
 .button {
   display: inline-flex;
