@@ -734,7 +734,6 @@ h1.hero-heading {
   color: var(--ink);
   margin-bottom: 12px;
 }
-
 .experience-list {
   display: flex;
   flex-direction: column;
@@ -742,44 +741,66 @@ h1.hero-heading {
 }
 
 .experience-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-sm);
+  padding: 16px;
   display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  padding: 22px;
+  align-items: center;
+  gap: 16px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.experience-card:hover {
+  border-color: rgba(10,124,114,0.34);
+  box-shadow: 0 6px 18px rgba(14,22,39,0.06);
 }
 
-.experience-logo-wrap {
-  width: 96px;
+.experience-logo {
+  width: 88px;
   height: 52px;
+  border: 1px solid var(--rule);
+  border-radius: var(--r-sm);
+  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding: 0;
+  padding: 8px;
 }
-.experience-logo-wrap .edu-logo {
+.experience-logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  margin: 0;
+  opacity: 0.8;
+  filter: grayscale(8%);
 }
 
 .experience-body {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  min-width: 0;
 }
-.experience-body .edu-school,
-.experience-body .edu-degree,
-.experience-body .edu-dates {
-  margin-bottom: 0;
+.experience-body h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0;
 }
-.experience-summary {
-  margin: 2px 0 0;
-  font-size: 15px;
+.experience-meta {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+.experience-body p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
   color: var(--text-2);
-  line-height: 1.7;
 }
 
 .certs-wrap {
@@ -1144,8 +1165,8 @@ h1.hero-heading {
   .nav-links.open { display: flex; }
   .nav-links a { border-radius: var(--r-sm); padding: 10px 14px; }
   .tag-list { grid-template-columns: repeat(2, 1fr); }
-  .experience-card { flex-direction: column; align-items: flex-start; gap: 14px; }
-  .experience-logo-wrap { width: 96px; height: 52px; }
+  .experience-card { flex-direction: column; align-items: flex-start; }
+  .experience-logo { width: 96px; height: 56px; }
   .cert-list { grid-template-columns: 1fr; }
   .footer-grid { flex-direction: column; align-items: flex-start; }
   .case-header { padding: 48px 0 36px; }
