@@ -7,15 +7,15 @@
 
 /* ── TOKENS ── */
 :root {
-  --ink:          #0f1114;
-  --ink-2:        #1c2128;
-  --ink-3:        #2d3540;
-  --rule:         #e2e6ea;
-  --rule-soft:    #eef0f3;
-  --text:         #1a1f26;
-  --text-2:       #52606d;
-  --text-3:       #8896a4;
-  --paper:        #f7f8fa;
+  --ink:          #1c1410;
+  --ink-2:        #231810;
+  --ink-3:        #3d2c22;
+  --rule:         #e7d9c8;
+  --rule-soft:    #f0e4d5;
+  --text:         #1c1410;
+  --text-2:       #78716c;
+  --text-3:       #a8918a;
+  --paper:        #fdfaf6;
   --white:        #ffffff;
   --teal:         #0a7c72;
   --teal-light:   #e6f4f2;
@@ -124,7 +124,7 @@ p { color: var(--text-2); }
   position: sticky;
   top: 0;
   z-index: 200;
-  background: rgba(247,248,250,0.92);
+  background: rgba(253,250,246,0.92);
   backdrop-filter: blur(16px) saturate(160%);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -218,7 +218,7 @@ p { color: var(--text-2); }
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: radial-gradient(circle, rgba(10,124,114,0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(180,83,9,0.07) 1px, transparent 1px);
   background-size: 28px 28px;
   mask-image: radial-gradient(ellipse 65% 80% at 92% 50%, black 5%, transparent 70%);
   -webkit-mask-image: radial-gradient(ellipse 65% 80% at 92% 50%, black 5%, transparent 70%);
@@ -238,7 +238,7 @@ p { color: var(--text-2); }
   align-items: center;
   gap: 8px;
   background: var(--teal-light);
-  border: 1px solid rgba(10,124,114,0.22);
+  border: 1px solid rgba(180,83,9,0.22);
   color: var(--teal);
   padding: 5px 14px;
   border-radius: 100px;
@@ -338,7 +338,7 @@ h1.hero-heading {
   margin-bottom: 0;
   font-size: 11px;
   letter-spacing: 0.06em;
-  background: rgba(10,124,114,0.09);
+  background: rgba(180,83,9,0.09);
 }
 
 .location-badge::before {
@@ -466,7 +466,7 @@ h1.hero-heading {
   transition: border-color 0.2s, background 0.2s;
 }
 .project-card-soon:hover {
-  border-color: rgba(10,124,114,0.3);
+  border-color: rgba(180,83,9,0.3);
   background: var(--teal-light);
 }
 
@@ -482,9 +482,9 @@ h1.hero-heading {
   display: inline-block;
 }
 .project-type.case-study {
-  color: var(--teal);
-  background: var(--teal-light);
-  border: 1px solid rgba(10,124,114,0.22);
+  color: #0369a1;
+  background: #e0f2fe;
+  border: 1px solid rgba(3,105,161,0.18);
 }
 .project-type.campaign {
   color: var(--amber);
@@ -664,7 +664,7 @@ h1.hero-heading {
 }
 .edu-card.accent {
   background: var(--teal-light);
-  border-color: rgba(10,124,114,0.28);
+  border-color: rgba(180,83,9,0.25);
 }
 
 .edu-logo {
@@ -1089,7 +1089,7 @@ h1.hero-heading {
 
 .image-placeholder {
   min-height: 200px;
-  border: 1.5px dashed rgba(10,124,114,0.25);
+  border: 1.5px dashed rgba(180,83,9,0.2);
   border-radius: var(--r-sm);
   display: grid;
   place-items: center;
