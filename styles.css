@@ -37,7 +37,8 @@
 /* In dark sections, bump teal to a high-contrast value */
 .hero-wrap,
 .about-wrap,
-.section-dark {
+.section-dark,
+.case-header {
   --teal:       #2dd4bf;
   --teal-light: rgba(45,212,191,0.12);
   --teal-mid:   #5eead4;
@@ -505,6 +506,10 @@ h1.hero-heading {
   box-shadow: var(--shadow-card);
   transform: translateY(-3px);
 }
+
+/* type-specific top accent bar */
+.project-card:has(.project-type.case-study) { border-top: 3px solid var(--teal); }
+.project-card:has(.project-type.campaign)   { border-top: 3px solid var(--amber); }
 .project-card:hover::after { opacity: 1; }
 
 /* coming-soon card variant */
@@ -1094,9 +1099,10 @@ h1.hero-heading {
 
 /* ── CASE STUDY PAGE LAYOUT ── */
 .case-header {
-  background: var(--white);
-  border-bottom: 1px solid var(--rule);
+  background: var(--ink);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
   padding: 64px 0 52px;
+  box-shadow: inset 0 -10px 32px rgba(0,0,0,0.15);
 }
 .case-back {
   display: inline-flex;
@@ -1106,7 +1112,7 @@ h1.hero-heading {
   font-size: 11px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-3);
+  color: rgba(241,245,249,0.45);
   text-decoration: none;
   margin-bottom: 28px;
   transition: color 0.15s, gap 0.15s;
@@ -1119,8 +1125,20 @@ h1.hero-heading {
   font-size: clamp(28px, 4vw, 48px);
   letter-spacing: -0.04em;
   line-height: 1.0;
-  color: var(--ink);
+  color: #f1f5f9;
   margin-bottom: 16px;
+}
+
+/* tagline italic under case title */
+.case-header p {
+  color: rgba(241,245,249,0.6);
+}
+
+/* tool badges on dark header */
+.case-header .tool-badge {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.12);
+  color: rgba(241,245,249,0.65);
 }
 .case-meta-row {
   display: flex;
