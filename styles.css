@@ -432,19 +432,19 @@ h1.hero-heading {
 }
 
 .section-alt {
-  background: var(--paper);
-  border-top: 1px solid var(--rule-soft);
-  border-bottom: 1px solid var(--rule-soft);
+  background: #0f172a;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .section-white {
-  background: #0f172a;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  background: #080e1a;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .section-dark {
   background: var(--ink);
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid rgba(255,255,255,0.08);
   box-shadow: inset 0 10px 32px rgba(0,0,0,0.2);
 }
 
