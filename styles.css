@@ -1212,6 +1212,32 @@ h1.hero-heading {
   text-align: center;
 }
 
+.case-img-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.case-img-grid figure {
+  margin: 0;
+}
+
+.case-img-grid img {
+  width: 100%;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.case-img-grid figcaption {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-3);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
 .case-actions {
   display: flex;
   gap: 10px;
