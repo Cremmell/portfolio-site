@@ -17,13 +17,13 @@
   --text-3:       #64748b;
   --paper:        #0b1120;
   --white:        #ffffff;
-  --teal:         #2dd4bf;
-  --teal-light:   rgba(45,212,191,0.1);
-  --teal-mid:     #5eead4;
-  --teal-hover:   #99f6e4;
-  --amber:        #b45309;
-  --amber-bg:     #fef3c7;
-  --amber-border: rgba(180,83,9,0.2);
+  --teal:         #f59e0b;
+  --teal-light:   rgba(245,158,11,0.1);
+  --teal-mid:     #fbbf24;
+  --teal-hover:   #fcd34d;
+  --amber:        #f59e0b;
+  --amber-bg:     rgba(245,158,11,0.1);
+  --amber-border: rgba(245,158,11,0.2);
   --max:          1060px;
   --r:            10px;
   --r-sm:         6px;
@@ -33,15 +33,15 @@
   --shadow-card:  0 8px 40px rgba(0,0,0,0.07);
 }
 
-/* ── DARK SECTION BRIGHT TEAL OVERRIDE ── */
-/* In dark sections, bump teal to a high-contrast value */
+/* ── DARK SECTION AMBER OVERRIDE ── */
+/* All sections are dark — keep amber tokens consistent */
 .hero-wrap,
 .about-wrap,
 .section-dark,
 .case-header {
-  --teal:       #2dd4bf;
-  --teal-light: rgba(45,212,191,0.12);
-  --teal-mid:   #5eead4;
+  --teal:       #f59e0b;
+  --teal-light: rgba(245,158,11,0.12);
+  --teal-mid:   #fbbf24;
 }
 
 /* ── RESET ── */
@@ -169,8 +169,8 @@ p { color: var(--text-2); }
   text-decoration: none;
   transition: color 0.15s;
 }
-.brand .dot { color: #2dd4bf; }
-.brand:hover { color: #2dd4bf; }
+.brand .dot { color: #f59e0b; }
+.brand:hover { color: #f59e0b; }
 
 .nav-toggle {
   display: none;
@@ -209,8 +209,8 @@ p { color: var(--text-2); }
 }
 .nav-links a:hover,
 .nav-links a.active {
-  color: #2dd4bf;
-  background: rgba(45,212,191,0.1);
+  color: #f59e0b;
+  background: rgba(245,158,11,0.1);
 }
 .nav-links .nav-cta a {
   background: rgba(255,255,255,0.1) !important;
@@ -219,9 +219,9 @@ p { color: var(--text-2); }
   padding: 7px 18px;
 }
 .nav-links .nav-cta a:hover {
-  background: #2dd4bf !important;
+  background: #f59e0b !important;
   color: #0f172a !important;
-  border-color: #2dd4bf !important;
+  border-color: #f59e0b !important;
 }
 
 /* ── HERO ── */
@@ -240,7 +240,7 @@ p { color: var(--text-2); }
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: radial-gradient(circle, rgba(45,212,191,0.12) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
   background-size: 28px 28px;
   mask-image: radial-gradient(ellipse 65% 80% at 92% 50%, black 5%, transparent 70%);
   -webkit-mask-image: radial-gradient(ellipse 65% 80% at 92% 50%, black 5%, transparent 70%);
@@ -253,7 +253,7 @@ p { color: var(--text-2); }
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: radial-gradient(ellipse 50% 70% at 86% 50%, rgba(45,212,191,0.08) 0%, transparent 68%);
+  background: radial-gradient(ellipse 50% 70% at 86% 50%, rgba(245,158,11,0.12) 0%, transparent 68%);
 }
 
 .hero {
@@ -270,7 +270,7 @@ p { color: var(--text-2); }
   align-items: center;
   gap: 8px;
   background: var(--teal-light);
-  border: 1px solid rgba(45,212,191,0.3);
+  border: 1px solid rgba(245,158,11,0.3);
   color: var(--teal);
   padding: 5px 14px;
   border-radius: 100px;
@@ -370,7 +370,7 @@ h1.hero-heading {
   margin-bottom: 0;
   font-size: 11px;
   letter-spacing: 0.06em;
-  background: rgba(45,212,191,0.1);
+  background: rgba(245,158,11,0.1);
 }
 
 .location-badge::before {
@@ -395,7 +395,7 @@ h1.hero-heading {
 }
 
 .button          { background: var(--teal); color: #0f172a; border-color: var(--teal); }
-.button:hover    { background: var(--teal-mid); border-color: var(--teal-mid); color: #0f172a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(45,212,191,0.3); }
+.button:hover    { background: var(--teal-mid); border-color: var(--teal-mid); color: #0f172a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245,158,11,0.3); }
 
 .button-secondary          { background: transparent; color: var(--text-2); border-color: var(--rule); }
 .button-secondary:hover    { border-color: rgba(255,255,255,0.4); color: #f1f5f9; transform: translateY(-2px); }
@@ -413,7 +413,7 @@ h1.hero-heading {
   background: var(--teal-mid);
   border-color: var(--teal-mid);
   color: #0f172a;
-  box-shadow: 0 6px 20px rgba(45,212,191,0.3);
+  box-shadow: 0 6px 20px rgba(245,158,11,0.3);
 }
 .hero-wrap .button-secondary {
   background: transparent;
@@ -432,13 +432,21 @@ h1.hero-heading {
 }
 
 .section-alt {
-  background: #0f172a;
+  background-color: #0f172a;
+  background-image:
+    radial-gradient(ellipse 50% 55% at 92% 8%, rgba(245,158,11,0.06) 0%, transparent 65%),
+    radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: auto, 28px 28px;
   border-top: 1px solid rgba(255,255,255,0.08);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .section-white {
-  background: #080e1a;
+  background-color: #080e1a;
+  background-image:
+    radial-gradient(ellipse 50% 55% at 6% 88%, rgba(245,158,11,0.06) 0%, transparent 65%),
+    radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: auto, 28px 28px;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -502,9 +510,9 @@ h1.hero-heading {
 
 .project-card,
 .project-card-soon {
-  --teal:       #2dd4bf;
-  --teal-light: rgba(45,212,191,0.1);
-  --teal-mid:   #5eead4;
+  --teal:       #f59e0b;
+  --teal-light: rgba(245,158,11,0.1);
+  --teal-mid:   #fbbf24;
 }
 
 .project-card {
@@ -520,8 +528,8 @@ h1.hero-heading {
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 .project-card:hover {
-  border-color: rgba(45,212,191,0.45);
-  box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+  border-color: rgba(245,158,11,0.55);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4), 0 0 64px rgba(245,158,11,0.1);
   transform: translateY(-3px);
 }
 
@@ -540,7 +548,7 @@ h1.hero-heading {
   transition: border-color 0.2s, background 0.2s;
 }
 .project-card-soon:hover {
-  border-color: rgba(45,212,191,0.3);
+  border-color: rgba(245,158,11,0.3);
   background: rgba(30,41,59,0.8);
 }
 
@@ -568,7 +576,7 @@ h1.hero-heading {
 .project-type.case-study {
   color: var(--teal);
   background: var(--teal-light);
-  border: 1px solid rgba(13,148,136,0.2);
+  border: 1px solid rgba(245,158,11,0.2);
 }
 .project-type.case-study::before  { background: var(--teal); }
 .project-type.campaign {
@@ -620,7 +628,7 @@ h1.hero-heading {
 .card-img-placeholder {
   aspect-ratio: 16 / 10;
   width: 100%;
-  background: linear-gradient(135deg, rgba(45,212,191,0.05) 0%, rgba(45,212,191,0.12) 100%);
+  background: linear-gradient(135deg, rgba(245,158,11,0.05) 0%, rgba(245,158,11,0.12) 100%);
   flex-shrink: 0;
   border-bottom: 1.5px dashed rgba(255,255,255,0.08);
 }
@@ -730,7 +738,7 @@ h1.hero-heading {
   font-size: 11px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #2dd4bf;
+  color: #f59e0b;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -779,7 +787,7 @@ h1.hero-heading {
 }
 .tag-list li:hover {
   border-color: var(--teal-mid);
-  box-shadow: 0 4px 16px rgba(13,148,136,0.12);
+  box-shadow: 0 4px 16px rgba(245,158,11,0.1);
   transform: translateY(-2px);
 }
 .tag-list li img {
@@ -830,8 +838,8 @@ h1.hero-heading {
   padding: 28px;
 }
 .edu-card.accent {
-  background: rgba(45,212,191,0.07);
-  border-color: rgba(45,212,191,0.2);
+  background: rgba(245,158,11,0.07);
+  border-color: rgba(245,158,11,0.2);
 }
 
 .edu-logo {
@@ -923,7 +931,7 @@ h1.hero-heading {
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 .experience-card:hover {
-  border-color: rgba(13,148,136,0.35);
+  border-color: rgba(245,158,11,0.3);
   box-shadow: 0 6px 18px rgba(15,23,42,0.08);
 }
 
@@ -1112,8 +1120,8 @@ h1.hero-heading {
   transition: border-color 0.25s, box-shadow 0.25s;
 }
 .contact-card:hover {
-  border-color: rgba(45,212,191,0.28);
-  box-shadow: 0 0 48px rgba(45,212,191,0.06), 0 8px 32px rgba(0,0,0,0.2);
+  border-color: rgba(245,158,11,0.25);
+  box-shadow: 0 0 48px rgba(245,158,11,0.06), 0 8px 32px rgba(0,0,0,0.2);
 }
 
 .contact-card .section-label { color: var(--teal); }
@@ -1132,7 +1140,7 @@ h1.hero-heading {
   background: var(--teal-mid);
   border-color: var(--teal-mid);
   color: #0f172a;
-  box-shadow: 0 6px 20px rgba(45,212,191,0.3);
+  box-shadow: 0 6px 20px rgba(245,158,11,0.3);
 }
 .section-dark .button-secondary {
   background: transparent;
@@ -1305,7 +1313,7 @@ h1.hero-heading {
 
 .image-placeholder {
   min-height: 200px;
-  border: 1.5px dashed rgba(13,148,136,0.22);
+  border: 1.5px dashed rgba(245,158,11,0.2);
   border-radius: var(--r-sm);
   display: grid;
   place-items: center;
