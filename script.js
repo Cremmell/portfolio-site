@@ -9,6 +9,7 @@ const LINKS = {
   linkedin_profile: "https://www.linkedin.com/in/chris-remmell/",
   uber_repo:        "https://github.com/Cremmell/uber-case-study",
   nyc_bite_repo:    "https://github.com/Cremmell/nyc-bite-week-marketing-analytics",
+  instagram_repo:   "https://github.com/Cremmell/instagram-engagement-analysis",
   resume_pdf:       "assets/Remmell.Chris.4-2026.pdf",
   email:            "mailto:chrispremmell@gmail.com"
 };

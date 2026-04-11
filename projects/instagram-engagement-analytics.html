@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Engagement Analytics | Chris Remmell</title>
+  <meta name="description" content="Case study: OLS regression and caption text feature analysis identifying engagement drivers across 5,975 posts from 47 top Instagram creators." />
+  <meta property="og:type"        content="article" />
+  <meta property="og:url"         content="https://chrisremmell.com/projects/instagram-engagement-analytics.html" />
+  <meta property="og:title"       content="Instagram Engagement Analytics | Chris Remmell" />
+  <meta property="og:description" content="OLS regression and caption text feature analysis identifying engagement drivers across 5,975 posts from 47 top Instagram creators." />
+  <meta property="og:image"       content="https://chrisremmell.com/assets/images/og-preview.jpg" />
+  <meta property="og:site_name"   content="Chris Remmell Portfolio" />
+  <link rel="canonical" href="https://chrisremmell.com/projects/instagram-engagement-analytics.html" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <!-- ── HEADER / NAV ── -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="../index.html">Chris Remmell<span class="dot">.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li class="nav-cta"><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── CASE STUDY HEADER ── -->
+    <div class="case-header">
+      <div class="container">
+        <a class="case-back" href="../index.html#projects">← Back to Projects</a>
+        <div class="case-meta-row" style="margin-bottom:16px;">
+          <span class="project-type case-study">Case Study</span>
+          <span class="tool-badge">
+            <img src="../assets/images/python.svg" alt="" aria-hidden="true" />
+            Python (Pandas)
+          </span>
+          <span class="tool-badge">OLS Regression</span>
+          <span class="tool-badge">Text Analysis</span>
+        </div>
+        <h1 class="case-title">Instagram Engagement Analytics</h1>
+        <p style="font-size:15px;color:var(--text-2);max-width:60ch;font-family:'Lora',serif;font-style:italic;line-height:1.6;">
+          OLS regression and caption text feature analysis identifying engagement drivers across 5,975 posts from 47 top Instagram creators.
+        </p>
+      </div>
+    </div>
+
+    <!-- ── CASE STUDY BODY ── -->
+    <div class="case-body">
+      <div class="container">
+        <div class="case-grid">
+
+          <div class="case-section">
+            <h2>Overview</h2>
+            <p>This project analyzes what drives engagement across 5,975 Instagram posts from 47 top creators, using OLS regression and caption text feature extraction. The goal was to isolate the impact of content format, caption characteristics, and creator identity on engagement outcomes.</p>
+          </div>
+
+          <div class="case-section">
+            <h2>Key Insights</h2>
+            <ul>
+              <li>Album posts outperform single photos by 15.2% — the single most impactful format decision a creator can make</li>
+              <li>Creator identity explains 45% of engagement variation, confirmed by R² jumping from 0.163 to 0.618 with fixed effects</li>
+              <li>🏆 Milestone Achiever Award &amp; Finalist — Fordham Gabelli Marketing Analytics Competition 2026</li>
+            </ul>
+          </div>
+
+          <div class="case-section">
+            <h2>Tools Used</h2>
+            <div class="tools" style="margin-bottom:0;">
+              <span class="tool-badge">
+                <img src="../assets/images/python.svg" alt="" aria-hidden="true" />
+                Python (Pandas)
+              </span>
+              <span class="tool-badge">OLS Regression</span>
+              <span class="tool-badge">Text Analysis</span>
+            </div>
+          </div>
+
+          <div class="case-section">
+            <h2>Business Takeaway</h2>
+            <p>Carousel (album) format is the highest-leverage content decision available to creators, outperforming single photos by 15.2%. The jump in R² from 0.163 to 0.618 when adding creator fixed effects reveals that brand equity and audience trust are the dominant drivers of engagement — meaning sustained audience-building matters far more than any individual post tactic.</p>
+          </div>
+
+          <div class="case-section">
+            <h2>Project Screenshots</h2>
+            <div class="image-placeholder">Add chart or screenshot here (e.g., engagement by post type or regression output)</div>
+          </div>
+
+          <div class="case-actions">
+            <a class="button" data-link="instagram_repo" href="#" target="_blank" rel="noopener">View Code on GitHub</a>
+            <a class="button button-secondary" href="../index.html#projects">Back to Projects</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">Chris Remmell · Marketing Analytics Portfolio</div>
+      <ul>
+        <li><a data-link="github_profile" href="#" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a data-link="linkedin_profile" href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a data-link="email" href="#">Email</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> Chris Remmell</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
