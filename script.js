@@ -56,6 +56,88 @@ if (toggleBtn && navLinks) {
   });
 }
 
+/* ── LIGHTBOX GALLERY ── */
+(function () {
+  const grids = document.querySelectorAll(".case-img-grid");
+  if (!grids.length) return;
+
+  /* build DOM once */
+  const lb       = document.createElement("div");
+  lb.className   = "lightbox";
+  lb.setAttribute("role", "dialog");
+  lb.setAttribute("aria-modal", "true");
+  lb.setAttribute("aria-label", "Image lightbox");
+  lb.innerHTML = `
+    <button class="lightbox-nav prev" aria-label="Previous image">&#8592;</button>
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+      <img class="lightbox-img" src="" alt="" />
+      <p class="lightbox-caption"></p>
+      <p class="lightbox-counter"></p>
+    </div>
+    <button class="lightbox-nav next" aria-label="Next image">&#8594;</button>
+  `;
+  document.body.appendChild(lb);
+
+  const lbImg     = lb.querySelector(".lightbox-img");
+  const lbCaption = lb.querySelector(".lightbox-caption");
+  const lbCounter = lb.querySelector(".lightbox-counter");
+  const lbClose   = lb.querySelector(".lightbox-close");
+  const lbPrev    = lb.querySelector(".lightbox-nav.prev");
+  const lbNext    = lb.querySelector(".lightbox-nav.next");
+
+  let images = [];
+  let current = 0;
+
+  function show(idx) {
+    current = idx;
+    const fig = images[idx].closest("figure");
+    lbImg.src = images[idx].src;
+    lbImg.alt = images[idx].alt;
+    lbCaption.textContent = fig ? (fig.querySelector("figcaption") || {}).textContent || "" : "";
+    lbCounter.textContent = `${idx + 1} / ${images.length}`;
+    lbPrev.disabled = idx === 0;
+    lbNext.disabled = idx === images.length - 1;
+  }
+
+  function open(imgs, idx) {
+    images = Array.from(imgs);
+    lb.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+    show(idx);
+    lbClose.focus();
+  }
+
+  function close() {
+    lb.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+
+  grids.forEach(grid => {
+    const imgs = grid.querySelectorAll("img");
+    imgs.forEach((img, idx) => {
+      img.addEventListener("click", () => open(imgs, idx));
+    });
+  });
+
+  lbClose.addEventListener("click", close);
+  lbPrev.addEventListener("click", () => show(current - 1));
+  lbNext.addEventListener("click", () => show(current + 1));
+
+  /* close on backdrop click */
+  lb.addEventListener("click", e => {
+    if (e.target === lb) close();
+  });
+
+  /* keyboard */
+  document.addEventListener("keydown", e => {
+    if (!lb.classList.contains("is-open")) return;
+    if (e.key === "Escape")      close();
+    if (e.key === "ArrowLeft"  && current > 0)              show(current - 1);
+    if (e.key === "ArrowRight" && current < images.length - 1) show(current + 1);
+  });
+})();
+
 /* ── SCROLL REVEAL ── */
 const revealTargets = document.querySelectorAll(
   ".hero, .project-card, .project-card-soon, .edu-card, .exp-block, .certs-wrap, .about-grid, .contact-card, .reveal, .case-section"

@@ -1227,6 +1227,112 @@ h1.hero-heading {
   border-radius: var(--r-sm);
   border: 1px solid var(--border);
   display: block;
+  cursor: zoom-in;
+  transition: opacity 0.15s ease;
+}
+
+.case-img-grid img:hover {
+  opacity: 0.88;
+}
+
+/* ── LIGHTBOX ── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(8, 14, 26, 0.93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-inner {
+  position: relative;
+  max-width: min(90vw, 1100px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--r-sm);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+}
+
+.lightbox-caption {
+  font-size: 12px;
+  color: rgba(241,245,249,0.55);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.lightbox-counter {
+  font-size: 11px;
+  color: rgba(241,245,249,0.3);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.06em;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -44px;
+  right: 0;
+  background: none;
+  border: none;
+  color: rgba(241,245,249,0.6);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.15s ease;
+}
+
+.lightbox-close:hover {
+  color: #f1f5f9;
+}
+
+.lightbox-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(241,245,249,0.7);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 14px 18px;
+  border-radius: var(--r-sm);
+  transition: background 0.15s ease, color 0.15s ease;
+  z-index: 10000;
+}
+
+.lightbox-nav:hover {
+  background: rgba(255,255,255,0.14);
+  color: #f1f5f9;
+}
+
+.lightbox-nav.prev { left: 16px; }
+.lightbox-nav.next { right: 16px; }
+
+.lightbox-nav:disabled {
+  opacity: 0.2;
+  cursor: default;
+  pointer-events: none;
 }
 
 .case-img-grid figcaption {
