@@ -453,12 +453,24 @@ h1.hero-heading {
 }
 
 .projects-note {
-  text-align: center;
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
-  letter-spacing: 0.05em;
-  color: var(--text-3);
-  margin-top: 20px;
+  letter-spacing: 0.04em;
+  color: rgba(241,245,249,0.35);
+}
+
+.project-card-slim {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  min-height: auto;
+}
+
+.project-card-slim .project-type {
+  margin-bottom: 0;
+  flex-shrink: 0;
 }
 
 /* ── PROJECTS ── */
