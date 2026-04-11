@@ -10,17 +10,17 @@
   --ink:          #0f172a;
   --ink-2:        #080e1a;
   --ink-3:        #1e293b;
-  --rule:         #e2e8f0;
-  --rule-soft:    #f1f5f9;
-  --text:         #1e293b;
-  --text-2:       #475569;
-  --text-3:       #94a3b8;
-  --paper:        #f8fafc;
+  --rule:         rgba(255,255,255,0.1);
+  --rule-soft:    rgba(255,255,255,0.06);
+  --text:         #e2e8f0;
+  --text-2:       #94a3b8;
+  --text-3:       #64748b;
+  --paper:        #0b1120;
   --white:        #ffffff;
-  --teal:         #0d9488;
-  --teal-light:   #f0fdfa;
-  --teal-mid:     #14b8a6;
-  --teal-hover:   #0f766e;
+  --teal:         #2dd4bf;
+  --teal-light:   rgba(45,212,191,0.1);
+  --teal-mid:     #5eead4;
+  --teal-hover:   #99f6e4;
   --amber:        #b45309;
   --amber-bg:     #fef3c7;
   --amber-border: rgba(180,83,9,0.2);
@@ -72,7 +72,7 @@ h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.08;
-  color: var(--ink);
+  color: #f1f5f9;
 }
 
 h1 { font-size: clamp(42px, 6vw, 72px); font-weight: 800; letter-spacing: -0.04em; line-height: 0.95; }
@@ -394,11 +394,11 @@ h1.hero-heading {
   font-weight: 400;
 }
 
-.button          { background: var(--ink); color: var(--white); border-color: var(--ink); }
-.button:hover    { background: var(--teal); border-color: var(--teal); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(13,148,136,0.28); }
+.button          { background: var(--teal); color: #0f172a; border-color: var(--teal); }
+.button:hover    { background: var(--teal-mid); border-color: var(--teal-mid); color: #0f172a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(45,212,191,0.3); }
 
 .button-secondary          { background: transparent; color: var(--text-2); border-color: var(--rule); }
-.button-secondary:hover    { border-color: var(--ink); color: var(--ink); transform: translateY(-2px); }
+.button-secondary:hover    { border-color: rgba(255,255,255,0.4); color: #f1f5f9; transform: translateY(-2px); }
 
 .button-ghost          { background: transparent; color: var(--text-3); border-color: var(--rule); }
 .button-ghost:hover    { border-color: var(--text-2); color: var(--text-2); transform: translateY(-2px); }
@@ -438,8 +438,8 @@ h1.hero-heading {
 }
 
 .section-white {
-  background: var(--white);
-  border-top: 1px solid var(--rule-soft);
+  background: #0f172a;
+  border-top: 1px solid rgba(255,255,255,0.06);
 }
 
 .section-dark {
@@ -709,8 +709,8 @@ h1.hero-heading {
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
   padding: 3px 10px;
-  background: var(--paper);
-  border: 1px solid var(--rule);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 100px;
   color: var(--text-3);
   display: inline-flex;
@@ -761,15 +761,15 @@ h1.hero-heading {
   margin: 0;
 }
 .tag-list li {
-  background: var(--white);
-  border: 1px solid var(--rule);
+  background: #1e293b;
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--r-sm);
   padding: 14px 12px;
   text-align: center;
   font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
   font-weight: 500;
-  color: var(--ink);
+  color: #e2e8f0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -824,14 +824,14 @@ h1.hero-heading {
 }
 
 .edu-card {
-  background: var(--white);
-  border: 1px solid var(--rule);
+  background: #1e293b;
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--r);
   padding: 28px;
 }
 .edu-card.accent {
-  background: var(--teal-light);
-  border-color: rgba(13,148,136,0.25);
+  background: rgba(45,212,191,0.07);
+  border-color: rgba(45,212,191,0.2);
 }
 
 .edu-logo {
@@ -848,7 +848,7 @@ h1.hero-heading {
   font-weight: 700;
   font-size: 19px;
   letter-spacing: -0.02em;
-  color: var(--ink);
+  color: #f1f5f9;
   margin-bottom: 2px;
 }
 .edu-sub {
@@ -863,7 +863,7 @@ h1.hero-heading {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 600;
   font-size: 16px;
-  color: var(--ink);
+  color: #e2e8f0;
   margin-bottom: 3px;
 }
 .edu-dates {
@@ -930,9 +930,9 @@ h1.hero-heading {
 .experience-logo {
   width: 88px;
   height: 52px;
-  border: 1px solid var(--rule);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--r-sm);
-  background: var(--white);
+  background: #253347;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -957,7 +957,7 @@ h1.hero-heading {
   font-weight: 700;
   font-size: 17px;
   letter-spacing: -0.02em;
-  color: var(--ink);
+  color: #f1f5f9;
   margin: 0;
 }
 .experience-meta {
@@ -995,8 +995,8 @@ h1.hero-heading {
   margin: 0;
 }
 .cert-list li {
-  background: var(--white);
-  border: 1px solid var(--rule);
+  background: #1e293b;
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--r-sm);
   padding: 12px 12px;
   font-size: 13px;
@@ -1264,8 +1264,8 @@ h1.hero-heading {
 }
 
 .case-section {
-  background: var(--white);
-  border: 1px solid var(--rule);
+  background: #1e293b;
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--r);
   padding: 28px 32px;
   margin-bottom: 0;
