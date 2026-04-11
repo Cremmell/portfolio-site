@@ -607,6 +607,10 @@ h1.hero-heading {
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .project-card:hover .card-img-wrap img {
